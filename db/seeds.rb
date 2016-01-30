@@ -12,6 +12,7 @@ json.each do |tea|
   Tea.create(
     name: tea['teaname_link/_text'],
     description: tea['entrycount_link/_text'] + 'link: ' + tea['entrycount_link/_text'],
-    price: tea['entrycount_link_numbers/_source'] # simulate price
+    price: tea['entrycount_link_numbers/_source'], # simulate price
+    image: tea['https://media.steepster.com/api/file/ip0MWYJRpapza3tw8yOZ/convert?fit=crop&h=140&w=140']
     )
 end
