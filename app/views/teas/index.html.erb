@@ -1,0 +1,19 @@
+<h1>Listing Teas</h1>
+
+<%= link_to 'New tea', new_tea_path %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+  </tr>
+
+  <% @teas.each do |tea| %>
+    <tr>
+      <td><%= tea.name %></td>
+      <td><%= tea.price %></td>
+      <td><%= tea.description %></td>
+    </tr>
+  <% end %>
+</table>
