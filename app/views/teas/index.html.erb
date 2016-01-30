@@ -5,26 +5,29 @@
   </div>
 
   <div class="row">
-    <% @teas.each do |tea| %>
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-header">
-          Price:
-          <%= tea.price %>
-          <i class="fa fa-usd"></i>
-        </div>
-        <%= image_tag(tea.image, alt: tea.name, dataSrc: tea.image, class: "card-img-top") %>
-        <!-- <img alt='<%= tea.name %>' class="card-img-top" data-src='<% tea.image %>'> -->
-        <div class="card-block">
-          <h4 class="card-title"><%= tea.name %></h4>
-          <p class="card-text"><%= tea.description %></p>
-        </div>
-        <div class="card-block">
-          <a class="card-link" href='<%= tea.link %>'>Details</a>
+    <div class="card-columns">
+      <% @teas.each do |tea| %>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-header">
+            Price:
+            <%= tea.price %>
+            <i class="fa fa-usd"></i>
+          </div>
+          <% if tea.image? %>
+          <img alt='<%= tea.name %>' class="card-img-top" src='<%= tea.image %>'>
+          <% end %>
+          <div class="card-block">
+            <h4 class="card-title"><%= tea.name %></h4>
+            <p class="card-text"><%= tea.description %></p>
+          </div>
+          <div class="card-block">
+            <a class="card-link" href='<%= tea.link %>'>Details</a>
+          </div>
         </div>
       </div>
+      <% end %>
     </div>
-    <% end %>
   </div>
 
 </div>

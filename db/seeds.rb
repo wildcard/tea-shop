@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+# require 'uri'
 
 json = ActiveSupport::JSON.decode(File.read('db/seeds/steepster_teas_1.json'))
 
