@@ -54,3 +54,7 @@ group :development do
 end
 
 gem "rack-livereload", :group => :development
+
+gem 'bootstrap', '~> 4.0.0.alpha3'
+
+gem 'angular-rails-templates'
