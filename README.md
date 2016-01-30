@@ -26,7 +26,8 @@ Start
 
 - `bundler install`
 - `bower install`
-- `ruby bin\rails server`
+- `rake db:migrate`
+- `rails server`
 - `bundle exec guard` *for live-reload*
 
 This README would normally document whatever steps are necessary to get the
