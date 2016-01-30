@@ -1,6 +1,33 @@
-<h1>Listing Teas</h1>
+<div class="container">
+  <div class="row">
+    <h1>Listing Teas</h1>
+    <%= link_to 'New tea', new_tea_path %>
+  </div>
 
-<%= link_to 'New tea', new_tea_path %>
+  <div class="row">
+    <% @teas.each do |tea| %>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-header">
+          Price:
+          <%= tea.price %>
+          <i class="fa fa-usd"></i>
+        </div>
+        <%= image_tag(tea.image, alt: tea.name, dataSrc: tea.image, class: "card-img-top") %>
+        <!-- <img alt='<%= tea.name %>' class="card-img-top" data-src='<% tea.image %>'> -->
+        <div class="card-block">
+          <h4 class="card-title"><%= tea.name %></h4>
+          <p class="card-text"><%= tea.description %></p>
+        </div>
+        <div class="card-block">
+          <a class="card-link" href='<%= tea.link %>'>Details</a>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+</div>
 
 <table>
   <tr>
@@ -10,10 +37,10 @@
   </tr>
 
   <% @teas.each do |tea| %>
-    <tr>
-      <td><%= tea.name %></td>
-      <td><%= tea.price %></td>
-      <td><%= tea.description %></td>
-    </tr>
+  <tr>
+    <td><%= tea.name %></td>
+    <td><%= tea.price %></td>
+    <td><%= tea.description %></td>
+  </tr>
   <% end %>
 </table>

@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>TeaShop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body ng-app="teaShop" ng-controller="MainCtrl">
+
+  <section class="jumbotron text-xs-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Tea Shop</h1>
+          <p class="lead text-muted">Tea Catalog</p>
+          <p>
+            <a href="#" class="btn btn-primary">Full catalog</a>
+            <a href="#" class="btn btn-secondary">Add a new tea</a>
+          </p>
+        </div>
+      </section>
 
 <%= yield %>
 
