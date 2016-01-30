@@ -1,4 +1,10 @@
-== README
+Tea Shop on rails
+=================
+
+Doc
+---
+[Google Doc](https://docs.google.com/document/d/14fhjjfGcLZqm1bSyWFx75_VrCLMAs6dnQDu3IKsdf2c/edit)
+
 
 [trello](https://trello.com/b/BXED0kAR)
 
