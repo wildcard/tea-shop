@@ -17,3 +17,5 @@
 //= require angular
 //= require angular-ui-router
 //= require_tree .
+
+app = angular.module('teaShop', ['ui.router'])
