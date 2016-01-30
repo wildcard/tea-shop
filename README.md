@@ -1,14 +1,19 @@
 == README
 
+[trello](https://trello.com/b/BXED0kAR)
+
+mock data from `steepster.com`
+imported using `import.io`
+
 Install
 -------
 
 - ruby []()
-- install Rails [](http://guides.rubyonrails.org/getting_started.html)
+- install Rails [Getting started](http://guides.rubyonrails.org/getting_started.html)
 - install sqlite3 []()
 
-- `gem install bundler` [](http://bundler.io/)
-- `gem install guard` [](https://github.com/guard/guard)
+- `gem install bundler` [link](http://bundler.io/)
+- `gem install guard` [link](https://github.com/guard/guard)
 
 Start
 -----
