@@ -15,7 +15,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require angular
+//= require angular-resource
 //= require angular-ui-router
 //= require_tree .
 
-app = angular.module('teaShop', ['ui.router'])
+app = angular.module('teaShop', ['ui.router', 'ngResource'])
+
+app.config(function($httpProvider) {
+  $httpProvider.defaults.headers.common['X-CSRF-Token'] =
+    $('meta[name=csrf-token]').attr('content');
+});
