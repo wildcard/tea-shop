@@ -5,6 +5,11 @@ class TeasController < ApplicationController
     render json: @teas
   end
 
+  def featured
+    @teas = Tea.expensive
+    render json: @teas
+  end
+
   def show
     @tea = Tea.find(params[:id])
     render json: @tea
