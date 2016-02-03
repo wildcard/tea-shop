@@ -27,7 +27,7 @@ Start
 - `bundler install`
 - `bower install`
 - `rake db:migrate` Generate db scheme
-- `rake db:reset` - reset db
+- `rake db:reset` - reset db - if you already seeded the DB
 - `rake db:seed` Generate db seed
 - `rails server`
 - `bundle exec guard` *for live-reload*
