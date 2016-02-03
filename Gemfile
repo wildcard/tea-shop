@@ -45,6 +45,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+#live reloading
 group :development do
   gem 'guard'
 end
@@ -55,7 +56,10 @@ end
 
 gem "rack-livereload", :group => :development
 
+# CORS
+gem 'rack-cors', :require => 'rack/cors'
+
+# TODO: Remove client
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'font-awesome-sass'
-
 gem 'ngannotate-rails'

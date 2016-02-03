@@ -124,6 +124,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     rack (1.6.4)
+    rack-cors (0.4.0)
     rack-livereload (0.3.16)
       rack
     rack-test (0.6.3)
@@ -211,6 +212,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   ngannotate-rails
+  rack-cors
   rack-livereload
   rails (= 4.2.5.1)
   sass-rails (~> 5.0)
